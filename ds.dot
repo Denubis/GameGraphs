@@ -1,0 +1,16 @@
+digraph dst {
+
+FindSticks -> {BasicTools Traps};
+FindFlint -> {BasicTools Shovel Spears};
+CutGrass -> {SleepingBags Traps};
+
+BasicTools -> {SmashRocks CutTrees};
+
+SmashRocks -> {ScienceMachine FirePits};
+CutTrees -> {FirePits};
+FindBeefalo -> {Farmland};
+
+ScienceMachine -> {Shovel Farmland CookingPots Spears};
+Shovel -> {MoveTrees MoveGrass};
+
+}
